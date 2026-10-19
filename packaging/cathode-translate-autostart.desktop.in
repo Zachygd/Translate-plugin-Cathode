@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Cathode Translate
+Comment=Start the Cathode Translate tray app at login
+Exec=@BIN@
+Icon=accessories-dictionary
+Terminal=false
+NoDisplay=true
+X-KDE-autostart-phase=2

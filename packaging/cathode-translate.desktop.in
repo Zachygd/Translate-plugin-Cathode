@@ -1,0 +1,21 @@
+[Desktop Entry]
+Type=Application
+Name=Cathode Translate
+GenericName=Screen Translator
+Comment=Translate text anywhere on screen with a local AI model
+Exec=@BIN@
+Icon=accessories-dictionary
+Terminal=false
+Categories=Utility;
+Keywords=translate;ocr;ollama;screen;cathode;
+StartupNotify=false
+Actions=translate;show;
+
+[Desktop Action translate]
+Name=Translate Screen Region
+Exec=@BIN@ --translate
+X-KDE-Shortcuts=Meta+Shift+T
+
+[Desktop Action show]
+Name=Show Translation Window
+Exec=@BIN@ --show

@@ -1,0 +1,31 @@
+# Cathode Translate settings
+# Installed to: ~/.config/cathode-translate/config.ini
+# After editing, restart the app (right-click the tray icon -> Quit indicator,
+# then launch "Cathode Translate" from the app menu).
+
+[translate]
+# Vision model used for reading and translating. Use an "instruct" model:
+# "thinking" models are much slower and can return blank results.
+#   qwen3-vl:2b-instruct  - lightest/fastest, ~4 GB VRAM
+#   qwen3-vl:4b-instruct  - recommended for 6-8 GB VRAM
+#   qwen3-vl:8b-instruct  - best quality, wants 10-12 GB VRAM
+# Download a model first with:  ollama pull <name>
+model = qwen3-vl:4b-instruct
+
+# Language to translate into
+target_language = English
+
+# How long the model stays in GPU memory after your last capture.
+# Examples: 10m, 1h, 0 (unload right away), -1 (keep loaded forever)
+keep_alive = 1h
+
+# Large grabs are shrunk so the longest side is at most this many pixels.
+# Lower = faster, higher = better on tiny text.
+max_image_side = 1280
+
+# Where Ollama is running, and the name of its systemd service
+ollama_url = http://localhost:11434
+ollama_service = ollama
+
+# Optional: replace the built-in instruction completely. Leave empty for default.
+prompt =
