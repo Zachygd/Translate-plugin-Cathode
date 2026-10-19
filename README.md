@@ -259,4 +259,8 @@ To store models on another drive, use `./install.sh --models-dir /path`. To also
 
 ---
 
+## License
+
+[MIT](LICENSE). Ollama and the Qwen3-VL models are separate projects with their own licenses.
+
 Part of the **Cathode** project by [Zachygd](https://github.com/Zachygd).
